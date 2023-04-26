@@ -118,6 +118,7 @@ hr {
 .tools {
   position: absolute;
   right: 0;
+  font-size: 0;
 }
 .tools button {
   border: none;
