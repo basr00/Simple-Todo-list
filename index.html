@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simple Todo list</title>
+		<script
+			src="https://kit.fontawesome.com/c54d06d894.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<div class="todo">
+			<div class="header">
+				<h2>my list</h2>
+			</div>
+			<div class="input-box">
+				<input type="text" class="todo-input" placeholder="Add a new task" />
+				<button class="btn-add">add</button>
+			</div>
+			<div class="todolist">
+				<h3>things to do</h3>
+				<ul class="todolist-items">
+					<li class="todolist-item">
+						Clean my room
+						<div class="tools">
+							<button class="complete">
+								<i class="fa-solid fa-check"></i>
+							</button>
+							<button class="delete"><i class="fa-solid fa-xmark"></i></button>
+						</div>
+					</li>
+					<li class="todolist-item">
+						Do homework
+						<div class="tools">
+							<button class="complete">
+								<i class="fa-solid fa-check"></i>
+							</button>
+							<button class="delete"><i class="fa-solid fa-xmark"></i></button>
+						</div>
+					</li>
+					<li class="todolist-item">
+						Go shopping
+						<div class="tools">
+							<button class="complete">
+								<i class="fa-solid fa-check"></i>
+							</button>
+							<button class="delete"><i class="fa-solid fa-xmark"></i></button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
