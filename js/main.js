@@ -5,8 +5,6 @@ const toDoItems = document.querySelectorAll('.todolist-item');
 let inputValue;
 let newToDo
 
-console.log(inputBtn);
-
 const addToDo = () => {
 	inputValue = input.value;
 	if (!inputValue == '') {
@@ -54,6 +52,13 @@ const completeToDo = (e) => {
 	}
 };
 
+const enterByKey = e => {
+	if(e.key === "Enter"){
+		addToDo()
+	}
+}
+
 toDoList.addEventListener('click', deleteToDo);
 toDoList.addEventListener('click', completeToDo);
 inputBtn.addEventListener('click', addToDo);
+document.addEventListener('keydown', enterByKey)
