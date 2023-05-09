@@ -57,13 +57,3 @@ const completeToDo = (e) => {
 toDoList.addEventListener('click', deleteToDo);
 toDoList.addEventListener('click', completeToDo);
 inputBtn.addEventListener('click', addToDo);
-
-/// Dodawanie nowego elementu
-// - tworzenie li
-// - dodawanie li klasy
-// - wstawianie stworzonego elementu do ul listy
-// - tworzenie buttonów
-// - dodawanie klasy do buttonów
-// - tworzenie tagów i z klasami
-// - dodawanie tagów i do buttonów
-// - wstawianie całych buttonów do li
