@@ -35,10 +35,6 @@ body {
     background-position: 0% 50%;
   }
 }
-hr {
-  width: 60%;
-}
-
 .todo {
   width: 600px;
   border-radius: 5px;
@@ -103,16 +99,18 @@ hr {
 .todolist ul {
   list-style: none;
 }
-
 .todolist-items {
   padding: 2em 3em;
 }
-
 .todolist-item {
   position: relative;
   padding: 0.5em 0;
   color: rgb(175, 166, 166);
   display: flex;
+}
+.todolist-empty {
+  text-align: center;
+  color: rgb(175, 166, 166);
 }
 
 .tools {

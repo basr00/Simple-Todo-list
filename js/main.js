@@ -2,6 +2,7 @@ const inputBtn = document.querySelector('.btn-add');
 const input = document.querySelector('.todo-input');
 const toDoList = document.querySelector('.todolist-items');
 const toDoItems = document.querySelectorAll('.todolist-item');
+const emptyListText = document.querySelector('.todolist-empty')
 let inputValue;
 let newToDo
 
@@ -14,10 +15,12 @@ const addToDo = () => {
 		toDoList.appendChild(newToDo);
 		toolsArea();
 		input.value = '';
+		emptyListText.textContent=''
 	} else {
-		console.log('input jest pusty');
+		alert('U cant add empty task')
 	}
 };
+
 const toolsArea = () => {
 	const toolsDiv = document.createElement('div');
     toolsDiv.classList.add('tools')
@@ -30,7 +33,6 @@ const toolsArea = () => {
 	deleteButton.classList.add('delete');
 	deleteButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
 
-
     toolsDiv.append(completeButton)
     toolsDiv.append(deleteButton)
     newToDo.append(toolsDiv)
@@ -40,6 +42,10 @@ const deleteToDo = (e) => {
 	const toDoToDelete = e.target.closest('li');
 	if (e.target.classList.contains('fa-xmark')) {
 		toDoToDelete.remove();
+	}
+	const allTodos = toDoList.querySelectorAll('li')
+	if(allTodos.length === 0){
+		emptyListText.textContent='list is empty'
 	}
 };
 
