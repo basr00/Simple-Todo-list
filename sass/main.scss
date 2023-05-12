@@ -48,15 +48,15 @@ body {
 	background-color: $main-color;
 	box-shadow: 0px 0px 5px;
 	padding: 0 2em;
-}
-.todo-input {
-	background: none;
-	background-color: $secondary-color;
-	border: 2px solid #272727;
-	padding: 1em;
-	border-radius: 5px;
-	width: 100%;
-	color: #8e8e8e;
+	&-input {
+		background: none;
+		background-color: $secondary-color;
+		border: 2px solid #272727;
+		padding: 1em;
+		border-radius: 5px;
+		width: 100%;
+		color: #8e8e8e;
+	}
 }
 .header {
 	text-align: center;
@@ -86,9 +86,9 @@ body {
 	text-transform: uppercase;
 	cursor: pointer;
 	transition: scale 0.3s;
-}
-.btn-add:hover {
-	scale: 0.95;
+	&:hover{
+		scale: 0.95;
+	}
 }
 // TO DO LLIST
 .todolist {
@@ -111,7 +111,7 @@ body {
 		color: $third-color;
 		display: flex;
 	}
-	&-empty{
+	&-empty {
 		text-align: center;
 		color: $third-color;
 	}
