@@ -17,7 +17,7 @@ const addToDo = () => {
 		input.value = '';
 		emptyListText.textContent=''
 	} else {
-		alert('U cant add empty task')
+		alert('U cant add empty task!')
 	}
 };
 
